@@ -61,7 +61,8 @@ header .btn-contato button {
 }
 
 header .btn-contato button,
-.hero-site button, .hoteis button {
+.hero-site button,
+.hoteis button {
     font-size: 18px;
     background-color: transparent;
     border: 1px solid #fff;
@@ -71,7 +72,8 @@ header .btn-contato button,
 }
 
 header .btn-contato button:hover,
-.hero-site button:hover, .hoteis button:hover {
+.hero-site button:hover,
+.hoteis button:hover {
     background-color: #fff;
     color: #000;
 }
@@ -99,7 +101,7 @@ section.hero-site {
 .hero-site .txt-hero h1 {
     font-size: 4em;
     line-height: 70px;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .hero-site .txt-hero h1 span {
@@ -138,7 +140,7 @@ section.vantagens {
 .vantagens .itens-container .txt-itens h3 {
     font-size: 3em;
     line-height: 50px;
-    font-weight: 200;
+    font-weight: 300;
     margin-bottom: 20px;
 }
 
@@ -163,7 +165,7 @@ section.contato {
 .contato .txt-contato h3 {
     font-size: 2.5em;
     line-height: 50px;
-    font-weight: 200;
+    font-weight: 300;
     margin-bottom: 20px;
 }
 
@@ -216,7 +218,7 @@ section.hoteis {
     text-align: center;
 }
 
-.hoteis > .overlay {
+.hoteis>.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -227,7 +229,7 @@ section.hoteis {
     z-index: 1;
 }
 
-.hoteis > .interface {
+.hoteis>.interface {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -239,7 +241,7 @@ section.hoteis {
 
 .hoteis h3 {
     font-size: 3em;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 50px;
 }
 
@@ -248,13 +250,70 @@ section.hoteis {
     display: block;
 }
 
-.hoteis p{
+.hoteis p {
     margin: 20px 0;
     font-size: 20px;
     font-weight: 300;
 }
 
-.hoteis button{
+.hoteis button {
     width: 220px;
     height: 60px;
+}
+
+/* estilo da seção como funionar */
+section.como-funciona {
+    padding: 80px 0;
+
+}
+
+.txt-funciona,
+.instrucoes {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: top;
+}
+
+.como-funciona .txt-funciona{
+    position: sticky;
+    top: 50%;
+    padding-bottom: 40px;
+}
+
+.como-funciona .txt-funciona h3 {
+    font-size: 4em;
+    line-height: 60px;
+    font-weight: 300;
+}
+
+.como-funciona .txt-funciona h3 span {
+    font-weight: 600;
+}
+
+.instrucoes .instru-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    border: 2px solid #000;
+    padding: 20px;
+}
+
+.instrucoes .instru-box img {
+    max-width: 100px;
+}
+
+.instrucoes .instru-box h4 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.instrucoes .instru-box h4 span {
+    font-weight: 300;
+}
+
+.instrucoes .instru-box p {
+    line-height: 20px;
 }
