@@ -61,7 +61,7 @@ header .btn-contato button {
 }
 
 header .btn-contato button,
-.hero-site button {
+.hero-site button, .hoteis button {
     font-size: 18px;
     background-color: transparent;
     border: 1px solid #fff;
@@ -71,7 +71,7 @@ header .btn-contato button,
 }
 
 header .btn-contato button:hover,
-.hero-site button:hover {
+.hero-site button:hover, .hoteis button:hover {
     background-color: #fff;
     color: #000;
 }
@@ -210,6 +210,7 @@ section.hoteis {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
     color: #fff;
     text-align: center;
@@ -236,11 +237,24 @@ section.hoteis {
     position: relative;
 }
 
-.hoteis h2 {
+.hoteis h3 {
     font-size: 3em;
     font-weight: 200;
     line-height: 50px;
 }
 
-.hoteis h2 span {
+.hoteis h3 span {
+    font-weight: 600;
+    display: block;
+}
+
+.hoteis p{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.hoteis button{
+    width: 220px;
+    height: 60px;
 }
