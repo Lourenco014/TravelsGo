@@ -12,6 +12,7 @@ body {
 .interface {
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 4%;
 }
 
 header {
@@ -27,6 +28,12 @@ header {
 header .interface {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -201,6 +208,7 @@ section.contato {
 
 .contato .icons-contato a button i {
     font-size: 24px;
+    margin-right: 15px;
 }
 
 .contato .icons-contato a button:hover {
@@ -344,6 +352,7 @@ footer .top-footer button {
     font-size: 24px;
     cursor: pointer;
     margin: 0 10px;
+    transition: .2s ease;
 }
 
 footer .top-footer button:hover {
