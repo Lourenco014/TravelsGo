@@ -13,11 +13,18 @@ document.addEventListener("scroll", ()=> {
 // botão menu mobile
 const btnMenuMob = document.querySelector('#btn-menu-mob');
 const menu = document.querySelector('.menu-desktop');
-// const line1 = document.querySelector('.line-menu-mob-1');
-// const line2 = document.querySelector('.line-menu-mob-2');
 
 btnMenuMob.addEventListener('click', ()=>{
     btnMenuMob.classList.toggle('ativo');
     menu.classList.toggle('ativo');
 
+});
+
+const as = document.querySelectorAll('.menu-desktop nav ul li a');
+as.forEach(link => {
+    link.addEventListener('click', () => {
+        btnMenuMob.classList.remove('ativo');
+        document.body.classList.remove('menu-opened');
+        menu.classList.remove('ativo');
+    });
 });

@@ -5,6 +5,15 @@
         padding: 20px;
     }
 
+    #inicio,
+    #destinos,
+    #contato,
+    #como-funciona,
+    #hoteis {
+        scroll-margin-top: 70px;
+    }
+
+
     header .btn-menu-mob {
         display: block;
         z-index: 4;
@@ -22,30 +31,31 @@
         transition: .4s ease-in-out;
         padding: 75px 0 0 0;
     }
-    
+
     header .menu-desktop nav {
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
+
     header .menu-desktop nav ul {
         flex-direction: column;
         width: 100%;
         text-align: center;
         gap: 0;
     }
+
     header .menu-desktop nav ul li {
         padding: 25px;
         transition: .2s ease-in-out;
     }
-    
-    header .menu-desktop nav ul li a:hover{
+
+    header .menu-desktop nav ul li a:hover {
         color: #000;
     }
-    
-    header .menu-desktop nav ul li:has(a:hover){
+
+    header .menu-desktop nav ul li:has(a:hover) {
         background-color: #fff;
     }
 
