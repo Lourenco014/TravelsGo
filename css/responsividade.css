@@ -2,10 +2,57 @@
 
     /* home responsividade */
     header {
-        padding: 10px;
+        padding: 20px;
     }
 
-    header .menu-desktop,
+    header .btn-menu-mob {
+        display: block;
+        z-index: 4;
+    }
+
+    header .menu-desktop {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 3;
+        width: 100dvw;
+        height: 100dvh;
+        background-color: #000;
+        transform: translateX(100%);
+        transition: .4s ease-in-out;
+        padding: 75px 0 0 0;
+    }
+    
+    header .menu-desktop nav {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    header .menu-desktop nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 0;
+    }
+    header .menu-desktop nav ul li {
+        padding: 25px;
+        transition: .2s ease-in-out;
+    }
+    
+    header .menu-desktop nav ul li a:hover{
+        color: #000;
+    }
+    
+    header .menu-desktop nav ul li:has(a:hover){
+        background-color: #fff;
+    }
+
+    .menu-desktop.ativo {
+        transform: translateX(0);
+    }
+
     header .btn-contato {
         display: none;
     }

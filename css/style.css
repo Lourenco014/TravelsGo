@@ -7,6 +7,7 @@
 
 body {
     background-color: #e3e3e3;
+    overflow-x: hidden;
 }
 
 .interface {
@@ -17,7 +18,7 @@ body {
 
 header {
     width: 100%;
-    padding: 20px 0;
+    padding: 25px 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -44,30 +45,21 @@ header .logo img {
 
 #header.scrolled {
     background-color: #000;
+    filter: invert();
     box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
-    filter: invert(1);
 }
 
 header .menu-desktop nav ul {
     list-style: none;
-
-}
-
-header .menu-desktop nav ul li {
-    display: inline-block;
-    margin: 0 40px;
+    display: flex;
+    gap: 40px
 }
 
 header .menu-desktop nav ul li a {
     color: #fff;
     text-decoration: none;
     cursor: pointer;
-    display: inline-block;
     transition: 0.2s ease;
-}
-
-header .menu-desktop nav ul li a:hover {
-    transform: scale(1.05);
 }
 
 header .btn-contato button {
@@ -91,6 +83,45 @@ header .btn-contato button:hover,
 .hoteis button:hover {
     background-color: #fff;
     color: #000;
+}
+
+/* estilo do menu mobile */
+header .btn-menu-mob {
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+}
+
+header .btn-menu-mob .line-menu-mob-1 {
+    width: 100%;
+    top: 10px;
+}
+
+header .btn-menu-mob .line-menu-mob-2 {
+    width: 70%;
+    top: 20px;
+}
+
+header .btn-menu-mob div {
+    background-color: #fff;
+    height: 3px;
+    transition: 0.2s ease;
+    position: absolute;
+}
+
+header .btn-menu-mob.ativo .line-menu-mob-1 {
+    transform: rotate(45deg);
+    top: 50%;
+}
+
+header .btn-menu-mob.ativo .line-menu-mob-2 {
+    transform: rotate(-45deg);
+    width: 100%;
+    top: 50%;
+
 }
 
 /* estilo do hero */
